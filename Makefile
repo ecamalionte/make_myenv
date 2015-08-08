@@ -9,7 +9,7 @@ postgresql:
 	brew install postgresql
 	ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
-memcached: 
+memcached:
 	brew install memcached
 	ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents
 
@@ -21,6 +21,7 @@ redis:
 
 dotfiles:
 	sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
+	echo "prompt minimal" > ~/.zsh.after/prompt.zsh
 
 myenv: homebrew macvim postgresql memcached mongodb redis dotfiles
 	homebrew
