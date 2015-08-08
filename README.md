@@ -1,12 +1,12 @@
 # make_myenv
 This is my personal Makefile to configure my Integrated Development Environment.
 
-#Example of use:
+Example of use:
 ```shell
 $ make myenv
 ```
 
-#Console output:
+Console output:
 ```
 brew install macvim
 Warning: macvim-7.4-77 already installed
