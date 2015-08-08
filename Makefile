@@ -2,7 +2,7 @@ homebrew:
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 macvim:
-	brew install macvim
+	brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
 	brew linkapps macvim
 
 postgresql:
