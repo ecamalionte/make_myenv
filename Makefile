@@ -1,7 +1,4 @@
-test:
-	echo "hello!"
-
-manager:
+homebrew:
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 macvim:
@@ -23,7 +20,8 @@ redis:
 	brew install redis
 
 
-myenv: macvim postgresql memcached mongodb redis
+myenv: homebrew macvim postgresql memcached mongodb redis
+	homebrew
 	macvim
 	postgresql
 	memcached
