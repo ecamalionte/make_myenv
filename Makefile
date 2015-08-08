@@ -30,7 +30,10 @@ haskell:
 	brew install haskell-stack
 	brew install cabal-install
 
-myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell ruby
+ack:
+	brew install ack
+
+myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell ruby ack
 	homebrew
 	macvim
 	postgresql
@@ -40,3 +43,4 @@ myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell ruby
 	dotfiles
 	haskell
 	ruby
+	ack
