@@ -33,7 +33,10 @@ haskell:
 ack:
 	brew install ack
 
-myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell ruby ack
+sqlserver-deps:
+	brew install freetds
+
+myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell ruby ack sqlserver-deps
 	homebrew
 	macvim
 	postgresql
@@ -44,3 +47,4 @@ myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell ruby 
 	haskell
 	ruby
 	ack
+	sqlserver-deps
