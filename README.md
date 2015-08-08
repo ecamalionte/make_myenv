@@ -11,8 +11,8 @@ Console output:
 brew install macvim
 Warning: macvim-7.4-77 already installed
 brew linkapps macvim
-
 Linking /usr/local/opt/macvim/MacVim.app to /Applications.
+
 brew install postgresql
 Warning: postgresql-9.4.4 already installed
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
