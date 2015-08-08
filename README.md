@@ -29,3 +29,21 @@ Warning: mongodb-3.0.5 already installed
 brew install redis
 Warning: redis-3.0.3 already installed
 ```
+
+Content:
+```
+homebrew
+  
+dotfiles
+macvim
+ack
+	
+postgresql
+memcached
+mongodb
+redis
+sqlserver-deps
+	
+haskell
+ruby
+```
