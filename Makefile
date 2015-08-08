@@ -23,11 +23,14 @@ dotfiles:
 	sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
 	echo "prompt minimal" > ~/.zsh.after/prompt.zsh
 
+ruby:
+	brew install rbenv
+
 haskell:
 	brew install haskell-stack
 	brew install cabal-install
 
-myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell
+myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell ruby
 	homebrew
 	macvim
 	postgresql
@@ -36,3 +39,4 @@ myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell
 	redis
 	dotfiles
 	haskell
+	ruby
