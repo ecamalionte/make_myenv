@@ -1,5 +1,5 @@
 # make_myenv
-This is my personal Makefile to configure my Development Environment.
+This is my personal Makefile to configure my Development Environment in seconds.
 
 Content of this Makefile:
 ```
