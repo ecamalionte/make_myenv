@@ -36,15 +36,15 @@ ack:
 sqlserver-deps:
 	brew install freetds
 
-myenv: homebrew macvim postgresql memcached mongodb redis dotfiles haskell ruby ack sqlserver-deps
+myenv: homebrew dotfiles macvim ack postgresql memcached mongodb redis sqlserver-deps haskell ruby
 	homebrew
+	dotfiles
 	macvim
+	ack
 	postgresql
 	memcached
 	mongodb
 	redis
-	dotfiles
+	sqlserver-deps
 	haskell
 	ruby
-	ack
-	sqlserver-deps
