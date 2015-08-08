@@ -19,13 +19,14 @@ mongodb:
 redis:
 	brew install redis
 
+dotfiles:
+	sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
 
-myenv: homebrew macvim postgresql memcached mongodb redis
+myenv: homebrew macvim postgresql memcached mongodb redis dotfiles
 	homebrew
 	macvim
 	postgresql
 	memcached
 	mongodb
 	redis
-
-	
+	dotfiles
