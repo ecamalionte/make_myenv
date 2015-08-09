@@ -1,7 +1,7 @@
 # make_myenv
-This is my personal Makefile to configure my Development Environment in seconds.
+This is an example of Makefile to configure a Mac OSX development environment quickly.
 
-Content of this Makefile:
+Content:
 ```
 homebrew
   
@@ -20,12 +20,12 @@ ruby
 ```
 
 Example of use:
-```shell
+```
 $ make myenv
 ```
 
 Console output:
-```shell
+```
 ruby -e ""
 
 sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
